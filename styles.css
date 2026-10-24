@@ -124,3 +124,59 @@ body{font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased;text-ren
  .site-footer{grid-template-columns:1fr;text-align:center;padding:38px 20px 22px}.site-footer .wordmark{margin:auto}.footer-links{justify-content:center;font-size:12px}.site-footer>small{grid-column:auto}
 }
 @media(max-width:390px){.header-whatsapp .wa-icon{display:none}.product-meta h3{font-size:19px}.product-grid{gap:18px 10px}.hero-media{min-height:320px}}
+
+
+/* Hero video repair: single continuous frame, no accidental split/collision */
+.hero{min-height:0;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);align-items:stretch}
+.hero-copy{min-width:0}
+.hero-media{position:relative;min-width:0;min-height:clamp(480px,43vw,650px);height:auto;aspect-ratio:4 / 3;align-self:stretch;overflow:hidden;isolation:isolate;background:#f3eee5 url('assets/hero-poster.jpg') center / cover no-repeat}
+.hero-media video.hero-video{display:block;position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:52% center;z-index:0;background:#f3eee5;pointer-events:none}
+.hero-video-shade{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(247,244,238,.12),transparent 28%),linear-gradient(0deg,rgba(247,244,238,.12),transparent 24%)}
+.hero-media:before{z-index:2;pointer-events:none;background:linear-gradient(90deg,rgba(247,244,238,.05),transparent 30%)}
+.hero-stamp{z-index:3}
+@media(min-width:761px){.hero{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr)}.hero-media{aspect-ratio:1.25 / 1;min-height:clamp(500px,42vw,650px)}}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.hero-media{order:1;grid-row:auto;width:100%;min-height:0;height:auto;aspect-ratio:16 / 10;max-height:none}.hero-copy{order:2}.hero-media video.hero-video{object-fit:cover;object-position:52% center}}
+@media(prefers-reduced-motion:reduce){.hero-media video.hero-video{display:none}}
+
+/* Hero video patch: keep the actual uploaded video visible and responsive */
+.hero-media {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: #f7f4ee url('assets/hero-poster.jpg') center / cover no-repeat;
+}
+.hero-media video.hero-video {
+  display: block !important;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
+  background: transparent;
+}
+.hero-media:before {
+  z-index: 1;
+  pointer-events: none;
+}
+.hero-media .hero-video-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.hero-media .hero-stamp {
+  z-index: 3;
+}
+@media (max-width: 760px) {
+  .hero-media {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+  .hero-media video.hero-video {
+    object-fit: cover;
+    object-position: center center;
+  }
+}
