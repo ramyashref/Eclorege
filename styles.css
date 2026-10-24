@@ -138,45 +138,10 @@ body{font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased;text-ren
 @media(max-width:760px){.hero{grid-template-columns:1fr}.hero-media{order:1;grid-row:auto;width:100%;min-height:0;height:auto;aspect-ratio:16 / 10;max-height:none}.hero-copy{order:2}.hero-media video.hero-video{object-fit:cover;object-position:52% center}}
 @media(prefers-reduced-motion:reduce){.hero-media video.hero-video{display:none}}
 
-/* Hero video patch: keep the actual uploaded video visible and responsive */
-.hero-media {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-  background: #f7f4ee url('assets/hero-poster.jpg') center / cover no-repeat;
-}
-.hero-media video.hero-video {
-  display: block !important;
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  z-index: 0;
-  background: transparent;
-}
-.hero-media:before {
-  z-index: 1;
-  pointer-events: none;
-}
-.hero-media .hero-video-shade {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  pointer-events: none;
-}
-.hero-media .hero-stamp {
-  z-index: 3;
-}
-@media (max-width: 760px) {
-  .hero-media {
-    min-height: 0;
-    height: auto;
-    aspect-ratio: 16 / 10;
-  }
-  .hero-media video.hero-video {
-    object-fit: cover;
-    object-position: center center;
-  }
-}
+/* Seven-product collection refinements */
+.product-title-link { color: inherit; text-decoration: none; }
+.product-title-link:hover { color: #9b783e; }
+.product-card .product-image img { background: #fff; }
+.product-card .product-image { background: #fff; }
+.product-grid { align-items: stretch; }
+@media (min-width: 1100px) { .product-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
