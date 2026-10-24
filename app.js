@@ -1,0 +1,8 @@
+document.addEventListener('DOMContentLoaded',()=>{
+ const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.main-nav');
+ if(toggle&&nav)toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰'});
+ const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal,.product-card').forEach((el,i)=>{if(el.classList.contains('product-card'))el.style.transitionDelay=(i%5)*70+'ms';observer.observe(el)});
+ document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const filter=btn.dataset.filter;document.querySelectorAll('.product-card').forEach(card=>{card.hidden=!(filter==='all'||card.dataset.category===filter)})}));
+ document.querySelectorAll('[data-product-order]').forEach(btn=>btn.addEventListener('click',()=>{const name=btn.dataset.productOrder;const price=btn.dataset.price||'';const msg=`Bonjour Éclorege, I would like to order ${name}${price?' (EGP '+price+')':''}. Please confirm availability and delivery details.`;window.open('https://wa.me/201080080203?text='+encodeURIComponent(msg),'_blank','noopener')}));
+ const video=document.querySelector('.hero-media video');if(video){video.addEventListener('error',()=>{video.style.display='none'})}
+});
