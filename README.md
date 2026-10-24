@@ -1,27 +1,21 @@
-# Éclorege — French-inspired premium storefront
+# Éclorege — French Premium Website
 
-Static website for GitHub Pages. Includes responsive homepage, collection page, five individual product pages, Our Story, Our Science, FAQ and Contact pages. Subtle scroll-reveal and hover animations are included, with reduced-motion accessibility support.
+## Included
+- Premium French-inspired storefront with responsive layouts and scroll animations.
+- Five individual product detail pages and collection page.
+- Hero video integrated from `assets/hero-video.mp4` (autoplay, muted, looping, inline).
+- Product images on clean white backgrounds.
+- WhatsApp ordering via `https://wa.me/201080080203`.
 
-## Deploy to GitHub Pages
-1. Download and unzip this folder.
-2. Upload the *contents* of this folder to the root of the `Eclorege` repository (same level as `index.html`), not into a nested folder.
-3. Commit changes. In GitHub, open Settings → Pages and select `main` / `/(root)`.
-4. Site URL: https://ramyashref.github.io/Eclorege/
+## Publish on GitHub Pages
+1. Unzip the package.
+2. Upload the **contents** of this folder to the root of your `Eclorege` repository, replacing the old `index.html`, `styles.css`, `app.js`, pages, and `assets` as appropriate.
+3. Make sure `assets/hero-video.mp4` is uploaded; it is about 3.4 MB.
+4. In GitHub, open Settings → Pages and ensure deployment is from `main` and `/(root)`.
+5. Wait for deployment, then hard-refresh the site with Ctrl+F5.
 
-## Hero video
-The homepage is video-ready and looks for `assets/hero-video.mp4`. Add a licensed brand video with that exact filename to the `assets` folder. Until then, the premium poster image remains visible as the background. Keep the video compressed for fast mobile loading.
-
-## WhatsApp ordering
-All order buttons open WhatsApp for `01080080203` (international URL format `201080080203`) and prefill a message. The customer presses Send in WhatsApp; the website does not silently send messages. Orders are not automatically stored in Google Sheets in this version.
-
-## Product images and content
-Five generated clean white-background product renders are used. Please compare all generated label text against official packaging before publishing; AI-generated images can contain small label inaccuracies. Product descriptions are intentionally general. Confirm ingredients, usage, claims, and availability against official product documentation before adding further claims.
-
-## Prices currently configured
-- Acne Control — EGP 400
-- Amber — EGP 450
-- Booster — EGP 750
-- Exosomes — EGP 450
-- Hair Revitalisation — EGP 550
-
-Update prices and shipping text in the HTML files if the official prices change.
+## Notes
+- The hero video is set to autoplay muted and loop; browsers may still defer playback until the page is ready.
+- The hero uses the Amber product image as a fallback background if video playback fails.
+- WhatsApp buttons open a pre-filled message; the customer still presses Send. This package does not itself store orders in Google Sheets.
+- Product details are descriptive presentation copy; confirm official ingredients, intended use, and claims against approved product information before publishing.
