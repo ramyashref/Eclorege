@@ -78,34 +78,10 @@
 </footer>
 <script src="../app.js"></script>
 
-<button class="cart-fab" type="button" aria-label="Open shopping cart" data-cart-open>
-  <span class="cart-bag">♧</span><span class="cart-fab-label">Cart</span><b class="cart-count" data-cart-count>0</b>
-</button>
+<button class="cart-fab" type="button" aria-label="Open shopping cart" data-cart-open><span class="cart-bag">♧</span><span class="cart-fab-label">Cart</span><b class="cart-count" data-cart-count>0</b></button>
 <div class="cart-backdrop" data-cart-close></div>
-<aside class="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
-  <div class="cart-head"><div><span class="cart-kicker">ÉCLOREGE</span><h2>Your selection</h2></div><button class="cart-close" type="button" aria-label="Close cart" data-cart-close>×</button></div>
-  <div class="cart-items" data-cart-items><div class="cart-empty">Your selection will appear here.<br><span>Add a product to begin.</span></div></div>
-  <div class="cart-summary">
-    <div class="cart-subtotal"><span>Subtotal</span><strong data-cart-total>EGP 0</strong></div>
-    <p>Delivery fees, if applicable, will be confirmed on WhatsApp.</p>
-    <button type="button" class="btn btn-gold cart-checkout" data-cart-checkout>Continue to checkout <span>→</span></button>
-    <button type="button" class="cart-continue" data-cart-close>Continue shopping</button>
-  </div>
-</aside>
-<div class="checkout-modal" data-checkout-modal aria-hidden="true">
-  <div class="checkout-card"><button class="cart-close checkout-x" type="button" data-checkout-close aria-label="Close checkout">×</button>
-    <span class="cart-kicker">ÉCLOREGE</span><h2>Delivery details</h2><p>Complete your details to prepare your WhatsApp order.</p>
-    <form data-checkout-form>
-      <label>Full name<input name="name" required autocomplete="name" placeholder="Your full name"></label>
-      <div class="checkout-row"><label>Mobile number<input name="phone" required type="tel" autocomplete="tel" placeholder="01xxxxxxxxx"></label><label>Governorate<input name="governorate" required placeholder="e.g. Cairo"></label></div>
-      <label>Area / district<input name="area" required placeholder="Area or district"></label>
-      <label>Full address<textarea name="address" required rows="3" placeholder="Street, building, floor, apartment..."></textarea></label>
-      <label>Additional notes <span class="optional">(optional)</span><textarea name="notes" rows="2" placeholder="Landmark or delivery notes"></textarea></label>
-      <div class="checkout-total"><span>Order subtotal</span><strong data-checkout-total>EGP 0</strong></div>
-      <button class="btn btn-gold checkout-submit" type="submit">Send order via WhatsApp <span>↗</span></button>
-    </form>
-  </div>
-</div>
+<aside class="cart-drawer" aria-label="Shopping cart" aria-hidden="true"><div class="cart-head"><div><span class="cart-kicker">ÉCLOREGE</span><h2>Your selection</h2></div><button class="cart-close" type="button" aria-label="Close cart" data-cart-close>×</button></div><div class="cart-items" data-cart-items><div class="cart-empty">Your selection will appear here.<br><span>Add a product to begin.</span></div></div><div class="cart-summary"><div class="cart-subtotal"><span>Subtotal</span><strong data-cart-total>EGP 0</strong></div><p>Delivery fees, if applicable, will be confirmed on WhatsApp.</p><button type="button" class="btn btn-gold cart-checkout" data-cart-checkout>Continue to checkout <span>→</span></button><button type="button" class="cart-continue" data-cart-close>Continue shopping</button></div></aside>
+<div class="checkout-modal" data-checkout-modal aria-hidden="true"><div class="checkout-card"><button class="cart-close checkout-x" type="button" data-checkout-close aria-label="Close checkout">×</button><span class="cart-kicker">ÉCLOREGE</span><h2>Delivery details</h2><p>Complete your details to prepare your WhatsApp order.</p><form data-checkout-form><label>Full name<input name="name" required autocomplete="name" placeholder="Your full name"></label><div class="checkout-row"><label>Mobile number<input name="phone" required type="tel" autocomplete="tel" placeholder="01xxxxxxxxx"></label><label>Governorate<input name="governorate" required placeholder="e.g. Cairo"></label></div><label>Area / district<input name="area" required placeholder="Area or district"></label><label>Full address<textarea name="address" required rows="3" placeholder="Street, building, floor, apartment..."></textarea></label><label>Additional notes <span class="optional">(optional)</span><textarea name="notes" rows="2" placeholder="Landmark or delivery notes"></textarea></label><div class="checkout-total"><span>Order subtotal</span><strong data-checkout-total>EGP 0</strong></div><button class="btn btn-gold checkout-submit" type="submit">Send order via WhatsApp <span>↗</span></button></form></div></div>
 
 <script src="../cart.js"></script>
 </body>
