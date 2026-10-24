@@ -1,84 +1,10 @@
-<!doctype html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Luxury mesotherapy and skincare products. Shop with confidence and pay on delivery.">
-  <title>Éclorege Mesotherapy | Premium Skincare</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="announcement">FREE SHIPPING ON ORDERS OF EGP 5,000 OR MORE</div>
-  <header class="site-header">
-    <button class="icon-button mobile-menu" aria-label="Open menu" id="menuToggle">☰</button>
-    <a class="wordmark" href="#" aria-label="Home"><span class="wordmark-main" id="brandName">Éclorege</span><span class="wordmark-sub">THE ART OF EVERYDAY CARE</span></a>
-    <nav id="mainNav"><a href="#home">Home</a><a href="#collection">Collection</a><a href="#story">Our Story</a><a href="#faq">FAQ</a></nav>
-    <button class="cart-trigger" id="openCart" aria-label="Open shopping cart">Cart <span id="cartCount">0</span></button>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">A MORE CONSIDERED ROUTINE</p>
-        <h1>Small details.<br><em>A difference you can feel.</em></h1>
-        <p class="hero-description">Discover a considered collection designed to bring a touch of refinement and simplicity to your daily routine.</p>
-        <a class="primary-button" href="#collection">Explore the collection <span>←</span></a>
-        <div class="hero-note"><span class="note-line"></span> Quality worth making part of your day</div>
-      </div>
-      <div class="hero-art" aria-label="Featured skincare products">
-        <div class="art-circle"></div>
-        <div class="art-stone stone-one"></div><div class="art-stone stone-two"></div>
-        <div class="bottle bottle-large"><span class="bottle-cap"></span><span class="bottle-brand">Éclorege</span><span class="bottle-label">DAILY<br>CARE</span></div>
-        <div class="bottle bottle-small"><span class="bottle-cap"></span><span class="bottle-brand">Éclorege</span><span class="bottle-label">PURE<br>FORMULA</span></div>
-        <div class="art-leaf leaf-one"></div><div class="art-leaf leaf-two"></div>
-        <div class="art-caption">THE SIGNATURE COLLECTION · NO. 01</div>
-      </div>
-    </section>
-
-    <section class="trust-strip">
-      <div><span class="trust-icon">◇</span><span><b>Thoughtfully selected</b><small>Products selected for you</small></span></div>
-      <div><span class="trust-icon">↗</span><span><b>Reliable delivery</b><small>Delivered to your door</small></span></div>
-      <div><span class="trust-icon">₤</span><span><b>Cash on delivery</b><small>Shop with confidence</small></span></div>
-      <div><span class="trust-icon">✳</span><span><b>Free shipping</b><small>On orders of EGP 5,000+</small></span></div>
-    </section>
-
-    <section class="collection section-wrap" id="collection">
-      <div class="section-heading"><div><p class="eyebrow">ÉCLOREGE MESOTHERAPY</p><h2>Discover the collection</h2></div><p>Thoughtful details. Confident choices. A refined experience.</p></div><p class="catalog-note">Products with incomplete details or pricing will remain unavailable until their official information is confirmed.</p>
-      <div class="product-grid" id="productGrid"></div>
-    </section>
-
-    <section class="editorial" id="story"><div class="editorial-mark">A.</div><div><p class="eyebrow">OUR PHILOSOPHY</p><h2>Quality is not an extra detail.<br><em>It is where we begin.</em></h2><p>We believe everyday products deserve an exceptional experience—from choosing the right product to clear information and reliable delivery.</p></div></section>
-
-    <section class="shipping-panel" id="shipping"><div><p class="eyebrow">DELIVERY, MADE SIMPLE</p><h2>Your order,<br>delivered with ease.</h2></div><div class="shipping-rates"><div><span>Greater Cairo</span><b>EGP 100</b></div><div><span>Outside Greater Cairo</span><b>EGP 150</b></div><div class="free-shipping"><span>Orders of EGP 5,000 or more</span><b>Free shipping</b></div></div></section>
-
-    <section class="faq section-wrap" id="faq"><p class="eyebrow">NEED TO KNOW</p><h2>Frequently asked questions</h2><details><summary>Which payment methods are available?</summary><p>Cash on Delivery (COD).</p></details><details><summary>How much is shipping?</summary><p>EGP 100 within Greater Cairo and EGP 150 outside Greater Cairo. Shipping is free when the product subtotal reaches EGP 5,000.</p></details><details><summary>Can I review my order before confirming?</summary><p>نعم، ستظهر المنتجات والكميات والشحن والإجمالي النهائي قبل إرسال الطلب.</p></details></section>
-  </main>
-  <footer><a class="wordmark footer-mark" href="#"><span class="wordmark-main">Éclorege</span><span class="wordmark-sub">THE ART OF EVERYDAY CARE</span></a><p>© <span id="year"></span> Éclorege. All rights reserved.</p><p>Cash on delivery · Shipping across Egypt</p></footer>
-
-  <div class="overlay" id="overlay"></div>
-  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
-    <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Shopping Cart <span id="drawerCount">(0)</span></h2></div><button class="close-button" id="closeCart" aria-label="Close">×</button></div>
-    <div class="cart-items" id="cartItems"></div>
-    <div class="cart-summary"><div><span>Subtotal</span><b id="subtotal">EGP 0</b></div><div><span>Shipping</span><b id="shippingCost">—</b></div><div class="summary-total"><span>Total</span><b id="total">EGP 0</b></div><p class="shipping-hint" id="shippingHint">Add products to your cart to get started.</p><button class="primary-button full-width" id="checkoutButton">Proceed to checkout <span>←</span></button><p class="secure-note">Pay by Cash on Delivery</p></div>
-  </aside>
-
-  <div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
-    <div class="checkout-head"><div><p class="eyebrow">CASH ON DELIVERY</p><h2 id="checkoutTitle">Delivery details</h2></div><button class="close-button" id="closeCheckout" aria-label="Close">×</button></div>
-    <form id="checkoutForm">
-      <label>Full name<input name="name" required autocomplete="name" placeholder="Enter your full name"></label>
-      <div class="form-row"><label>Phone number<input name="phone" type="tel" required autocomplete="tel" pattern="[0-9+() -]{8,20}" placeholder="01xxxxxxxxx"></label><label>Email address <span>(optional)</span><input name="email" type="email" autocomplete="email" placeholder="name@example.com"></label></div>
-      <label>Governorate / delivery area<select name="region" id="region" required><option value="">Select your delivery area</option><option value="greater-cairo">Greater Cairo</option><option value="outside">Outside Greater Cairo</option></select></label>
-      <label>Full delivery address<textarea name="address" required rows="3" placeholder="Street, area, building, floor, and landmark"></textarea></label>
-      <label>Order notes <span>(optional)</span><textarea name="notes" rows="2" placeholder="Any additional delivery instructions"></textarea></label>
-      <label class="privacy-consent"><input type="checkbox" name="privacyConsent" value="yes" required> I agree that my details will be used to process and deliver this order.</label>
-      <label class="honeypot" aria-hidden="true">Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label>
-      <div class="checkout-total"><span>Total including shipping</span><b id="checkoutTotal">EGP 0</b></div>
-      <button class="primary-button full-width" type="submit">Place order — Cash on Delivery <span>←</span></button>
-      <p class="form-note">Your details will be used only to process and deliver your order. Never submit payment card details; this store uses Cash on Delivery.</p>
-    </form>
-  </div>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
-</body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Éclorege premium mesotherapy and skincare collection."><title>Éclorege — The Art of Everyday Care</title><link rel="stylesheet" href="styles.css"></head><body>
+<div class="announcement">Complimentary shipping on orders of EGP 5,000 or more</div><header class="site-header"><button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button><a class="wordmark" href="index.html"><span class="wordmark-main">Éclorege</span><span class="wordmark-sub">THE ART OF EVERYDAY CARE</span></a><nav class="main-nav" id="mainNav"><a class="active" href="index.html">Home</a><a href="collection.html">Collection</a><a href="story.html">Our Story</a><a href="faq.html">FAQ</a></nav><div class="header-actions"><button class="cart-trigger" id="openCart">Bag <span id="cartCount">0</span></button></div></header>
+<main><section class="hero" id="home"><div class="hero-copy"><p class="eyebrow">A more considered routine</p><h1>Small details.<br><em>A difference you can feel.</em></h1><p class="hero-description">Discover a considered collection of mesotherapy and skincare essentials, presented with clarity and care.</p><a class="button" href="collection.html">Explore the collection <span>↗</span></a><div class="hero-note">Quality worth making part of your day</div></div><div class="hero-art"><img class="hero-image" src="assets/products/amber-product.jpg" alt="Éclorege Amber collection product artwork"><span class="hero-caption">THE SIGNATURE COLLECTION · NO. 01</span></div></section>
+<section class="trust-strip"><div class="trust-item"><span class="trust-symbol">◇</span><span><b>Thoughtfully selected</b><small>Considered product collection</small></span></div><div class="trust-item"><span class="trust-symbol">↗</span><span><b>Reliable delivery</b><small>Delivered across Egypt</small></span></div><div class="trust-item"><span class="trust-symbol">₤</span><span><b>Cash on delivery</b><small>Pay when it arrives</small></span></div><div class="trust-item"><span class="trust-symbol">✳</span><span><b>Complimentary shipping</b><small>On orders of EGP 5,000+</small></span></div></section>
+<section class="section-wrap"><div class="section-top reveal"><div><p class="eyebrow">Éclorege mesotherapy</p><h2>Considered essentials</h2></div><p>A focused collection. Clear product information. A more considered shopping experience.</p></div><div class="product-grid" id="productGrid"></div><div style="text-align:center;margin-top:42px"><a class="button button-outline" href="collection.html">View the full collection <span>↗</span></a></div></section>
+<section class="editorial reveal"><div class="editorial-mark">É.</div><div><p class="eyebrow">Our philosophy</p><h2>Quality is not an extra detail.<br><em>It is where we begin.</em></h2><p>We believe the experience matters at every step—from exploring a product to understanding its details and receiving an order with confidence.</p><a class="button button-outline" href="story.html" style="color:#f7f4ed;border-color:#78877c;margin-top:16px">Discover our story <span>↗</span></a></div></section>
+<section class="shipping-panel reveal"><div><p class="eyebrow">Delivery, made simple</p><h2>Your order,<br>delivered with ease.</h2></div><div class="shipping-rates"><div><span>Greater Cairo</span><b>EGP 100</b></div><div><span>Outside Greater Cairo</span><b>EGP 150</b></div><div class="free-shipping"><span>Orders of EGP 5,000 or more</span><b>Free shipping</b></div></div></section></main>
+<footer><a class="wordmark" href="index.html"><span class="wordmark-main">Éclorege</span><span class="wordmark-sub">THE ART OF EVERYDAY CARE</span></a><p>© <span id="year"></span> Éclorege. All rights reserved.</p><p>Cash on delivery · Shipping across Egypt</p></footer>
+<div class="overlay" id="overlay"></div><aside class="cart-drawer" id="cartDrawer" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">Your selection</p><h2>Shopping bag <span id="drawerCount">(0)</span></h2></div><button class="close-button" id="closeCart" aria-label="Close cart">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-summary"><div><span>Subtotal</span><b id="subtotal">EGP 0</b></div><div><span>Shipping</span><b id="shippingCost">—</b></div><div class="summary-total"><span>Total</span><b id="total">EGP 0</b></div><p class="shipping-hint" id="shippingHint">Explore the collection to get started.</p><button class="button full-width" id="checkoutButton">Continue to checkout ↗</button><p class="secure-note">Payment method: Cash on Delivery</p></div></aside>
+<div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><div class="checkout-head"><div><p class="eyebrow">Cash on delivery</p><h2 id="checkoutTitle">Delivery details</h2></div><button class="close-button" id="closeCheckout" aria-label="Close checkout">×</button></div><form id="checkoutForm"><label>Full name<input name="name" required autocomplete="name" placeholder="Your full name"></label><div class="form-row"><label>Phone number<input name="phone" type="tel" required autocomplete="tel" pattern="[0-9+() -]{8,20}" placeholder="01xxxxxxxxx"></label><label>Email address <span>(optional)</span><input name="email" type="email" autocomplete="email" placeholder="name@example.com"></label></div><label>Delivery area<select name="region" id="region" required><option value="">Choose your area</option><option value="greater-cairo">Greater Cairo</option><option value="outside">Outside Greater Cairo</option></select></label><label>Full delivery address<textarea name="address" required rows="3" placeholder="Street, area, building, floor, and landmark"></textarea></label><label>Order notes <span>(optional)</span><textarea name="notes" rows="2" placeholder="Delivery instructions"></textarea></label><label style="position:absolute;left:-9999px" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label><label style="display:flex;align-items:flex-start;gap:9px;font-weight:400"><input type="checkbox" name="privacyConsent" value="yes" required style="width:auto;margin-top:3px">I agree to have my order and delivery details processed to fulfil this purchase.</label><div class="checkout-total"><span>Total including shipping</span><b id="checkoutTotal">EGP 0</b></div><button class="button full-width" type="submit">Place order — Cash on Delivery ↗</button><p class="form-note">Your order can only be submitted after the store owner connects the order-processing endpoint.</p></form></div><div class="toast" id="toast" role="status" aria-live="polite"></div><script src="app.js"></script></body></html>
